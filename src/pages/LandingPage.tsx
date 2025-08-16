@@ -29,7 +29,9 @@ export default function LandingPage() {
           </section>
 
           {/* Form */}
-          <LoopsForm />
+          <section className="h-32 w-full flex flex-col justify-center">
+            <LoopsForm />
+          </section>
         </div>
       </div>
 
