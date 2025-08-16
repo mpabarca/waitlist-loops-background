@@ -5,18 +5,17 @@ import LoopsForm from "@/components/LoopsForm";
 export default function LandingPage() {
   const background = "bg-gray-100";
   const padding = "px-5 pt-5";
+  const sizeLogo = "w-12 h-12 md:w-15 md:h-15";
 
   return (
     <main className='min-h-screen flex flex-col'>
       <div className={`flex-1 flex ${padding}`}>
-        <div className={`w-full flex flex-1 flex-col justify-center items-center text-center rounded-xl gap-8 pb-16 ${background}`}>
+        <div
+          className={`w-full flex flex-1 flex-col justify-center items-center text-center rounded-xl gap-8 pb-16 ${background}`}
+        >
           {/* Logo + Badge */}
           <section className='flex flex-col gap-4 items-center'>
-            <img
-              src='/vite.svg'
-              alt='Logo'
-              className='w-12 h-12 md:w-15 md:h-15'
-            />
+            <img src='/vite.svg' alt='Logo' className={sizeLogo} />
             <EarlyAccessBadge />
           </section>
 
