@@ -4,14 +4,15 @@ import LoopsForm from "@/components/LoopsForm";
 
 export default function LandingPage() {
   const parentStyle = {
-    background: "bg-gray-100",
+    background: "bg-[url(/bg-01.jpg)] bg-no-repeat bg-cover bg-center", // For more images check free versions on https://www.freepik.com/
     padding: "px-5 pt-5",
     sizeLogo: "w-12 h-12 md:w-15 md:h-15",
+    fontColor: "text-white", // for bg-04 try -> text-gray-700
   };
   const badgeStyle = {
     background: "transparent",
-    fontColor: "text-gray-600",
-    borderColor: "rounded-md border border-gray-300",
+    fontColor: "text-white font-bold",
+    borderColor: "rounded-md border-2 border-white",
   };
 
   return (
@@ -31,9 +32,13 @@ export default function LandingPage() {
           </section>
 
           {/* Title & Subtitle */}
-          <section className='flex flex-col gap-4'>
-            <h1 className='text-4xl font-bold'>Launch with Confidence</h1>
-            <p className='max-w-md'>
+          <section
+            className={`flex flex-col items-center gap-4 ${parentStyle.fontColor}`}
+          >
+            <h1 className='text-6xl md:text-7xl font-bold'>
+              Launch with Confidence
+            </h1>
+            <p className='max-w-lxl md:text-lg'>
               Collect emails, build hype, and validate your idea with a
               beautiful pre-launch page.
             </p>

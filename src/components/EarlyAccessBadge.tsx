@@ -11,7 +11,7 @@ function EarlyAccessBadge({
 }: IEarlyAccessBadge) {
   return (
     <div
-      className={`${background} ${fontColor} ${borderColor} text-[10px] md:text-xs pt-2 pb-1.5 px-4 uppercase`}
+      className={`${background} ${fontColor} ${borderColor} text-[10px] md:text-xs py-2 px-4 uppercase`}
     >
       In Early Access Now
     </div>
