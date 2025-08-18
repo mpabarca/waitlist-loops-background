@@ -3,20 +3,31 @@ import Footer from "@/components/Footer";
 import LoopsForm from "@/components/LoopsForm";
 
 export default function LandingPage() {
-  const background = "bg-gray-100";
-  const padding = "px-5 pt-5";
-  const sizeLogo = "w-12 h-12 md:w-15 md:h-15";
+  const parentStyle = {
+    background: "bg-gray-100",
+    padding: "px-5 pt-5",
+    sizeLogo: "w-12 h-12 md:w-15 md:h-15",
+  };
+  const badgeStyle = {
+    background: "transparent",
+    fontColor: "text-gray-600",
+    borderColor: "rounded-md border border-gray-300",
+  };
 
   return (
     <main className='min-h-screen flex flex-col'>
-      <div className={`flex-1 flex ${padding}`}>
+      <div className={`flex-1 flex ${parentStyle.padding}`}>
         <div
-          className={`w-full flex flex-1 flex-col justify-center items-center text-center rounded-xl gap-8 pb-16 ${background}`}
+          className={`w-full flex flex-1 flex-col justify-center items-center text-center rounded-xl gap-8 pb-16 ${parentStyle.background}`}
         >
           {/* Logo + Badge */}
           <section className='flex flex-col gap-4 items-center'>
-            <img src='/vite.svg' alt='Logo' className={sizeLogo} />
-            <EarlyAccessBadge />
+            <img src='/vite.svg' alt='Logo' className={parentStyle.sizeLogo} />
+            <EarlyAccessBadge
+              background={badgeStyle.background}
+              borderColor={badgeStyle.borderColor}
+              fontColor={badgeStyle.fontColor}
+            />
           </section>
 
           {/* Title & Subtitle */}
@@ -29,7 +40,7 @@ export default function LandingPage() {
           </section>
 
           {/* Form */}
-          <section className="h-32 w-full flex flex-col justify-center">
+          <section className='h-32 w-full flex flex-col justify-center'>
             <LoopsForm />
           </section>
         </div>
