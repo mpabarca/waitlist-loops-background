@@ -4,7 +4,7 @@ import LoopsForm from "@/components/LoopsForm";
 
 export default function LandingPage() {
   const parentStyle = {
-    background: "bg-[url(/bg-01.jpg)] bg-no-repeat bg-cover bg-center", // For more images check free versions on https://www.freepik.com/
+    background: "bg-[url(/bg/bg-01.jpg)] bg-no-repeat bg-cover bg-center", // For more images check free versions on https://www.freepik.com/
     padding: "px-5 pt-5",
     sizeLogo: "w-12 h-12 md:w-15 md:h-15",
     fontColor: "text-white", // for bg-04 try -> text-gray-700
@@ -23,7 +23,7 @@ export default function LandingPage() {
         >
           {/* Logo + Badge */}
           <section className='flex flex-col gap-4 items-center'>
-            <img src='/vite.svg' alt='Logo' className={parentStyle.sizeLogo} />
+            <img src='/logo-white.png' alt='Logo' className={parentStyle.sizeLogo} />
             <EarlyAccessBadge
               background={badgeStyle.background}
               borderColor={badgeStyle.borderColor}
