@@ -35,10 +35,10 @@ export default function LandingPage() {
           <section
             className={`flex flex-col items-center gap-4 ${parentStyle.fontColor}`}
           >
-            <h1 className='text-6xl md:text-7xl font-bold'>
+            <h1 className='text-5xl md:text-7xl font-bold'>
               Launch with Confidence
             </h1>
-            <p className='max-w-lxl md:text-lg'>
+            <p className='max-w-xl md:text-lg'>
               Collect emails, build hype, and validate your idea with a
               beautiful pre-launch page.
             </p>
