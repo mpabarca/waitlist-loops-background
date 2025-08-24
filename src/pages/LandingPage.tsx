@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import LoopsForm from "@/components/LoopsForm";
 
 export default function LandingPage() {
-  const parentStyle = {
+  const heroStyle = {
     background: "bg-[url(/bg/bg-01.jpg)] bg-no-repeat bg-cover bg-center", // For more images check free versions on https://www.freepik.com/
     padding: "px-5 pt-5",
     sizeLogo: "w-12 h-12 md:w-15 md:h-15",
@@ -17,13 +17,13 @@ export default function LandingPage() {
 
   return (
     <main className='min-h-screen flex flex-col'>
-      <div className={`flex-1 flex ${parentStyle.padding}`}>
+      <div className={`flex-1 flex ${heroStyle.padding}`}>
         <div
-          className={`w-full flex flex-1 flex-col justify-center items-center text-center rounded-xl gap-8 pb-16 ${parentStyle.background}`}
+          className={`w-full flex flex-1 flex-col justify-center items-center text-center rounded-xl gap-8 pb-16 ${heroStyle.background}`}
         >
           {/* Logo + Badge */}
           <section className='flex flex-col gap-4 items-center'>
-            <img src='/logo-white.png' alt='Logo' className={parentStyle.sizeLogo} />
+            <img src='/logo-white.png' alt='Logo' className={heroStyle.sizeLogo} />
             <EarlyAccessBadge
               background={badgeStyle.background}
               borderColor={badgeStyle.borderColor}
@@ -33,7 +33,7 @@ export default function LandingPage() {
 
           {/* Title & Subtitle */}
           <section
-            className={`flex flex-col items-center gap-4 ${parentStyle.fontColor}`}
+            className={`flex flex-col items-center gap-4 ${heroStyle.fontColor}`}
           >
             <h1 className='text-5xl md:text-7xl font-bold'>
               Launch with Confidence
